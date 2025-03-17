@@ -1,2 +1,28 @@
+.holder {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+    width: 100%; /* Take full width of parent */
+}
 
-/* Your CSS Code here. */
+.item {
+    width: 100px; /* Set the width of each item */
+    height: 100px; /* Set the height of each item */
+    text-align: center;
+    line-height: 100px; /* Vertically center the text */
+}
+
+.item:nth-child(1) {
+    background-color: green; /* Set the background color of item 1 */
+    order: 1; /* Place item 1 at the beginning */
+}
+
+.item:nth-child(2) {
+    background-color: red; /* Set the background color of item 2 */
+    order: 2; /* Place item 2 in the middle */
+}
+
+.item:nth-child(3) {
+    background-color: blue; /* Set the background color of item 3 */
+    order: 3; /* Place item 3 at the end */
+}
